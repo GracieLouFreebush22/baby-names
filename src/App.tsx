@@ -7,5 +7,5 @@ function App(): JSX.Element {
       <BabyNamesView/>
     </div>
   )
-
+}
 export default App;
