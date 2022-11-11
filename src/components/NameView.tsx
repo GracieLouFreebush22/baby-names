@@ -1,4 +1,3 @@
-import react from "react";
 import { OneName } from "../BabyNamesData";
 
 interface NameViewProps {
