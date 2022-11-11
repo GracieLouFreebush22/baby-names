@@ -1,12 +1,14 @@
 import react from "react";
-import {OneName} from "../babyNamesData"
+import {OneName} from "../BabyNamesData"
 
 interface NameViewProps{
     onename: OneName;
 }
 
-export function NameView(): JSX.Element{
+export function NameView(props: NameViewProps): JSX.Element{
     return(
-        <div> Hello this is place view </div>
+        <div className= "name-view"> 
+            <h3> {props.onename.name}</h3>
+        </div>
     )
 }

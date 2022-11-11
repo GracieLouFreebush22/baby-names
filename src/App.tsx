@@ -5,7 +5,10 @@ import "./style.css"
 function App(): JSX.Element {
   return (
     <div>
-      <BabyNamesView/>
+      <h1> Grace's Baby Names Website</h1>
+      <div>
+        <BabyNamesView/>
+      </div>
     </div>
   )
 }
