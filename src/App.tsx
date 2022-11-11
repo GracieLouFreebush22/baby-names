@@ -1,4 +1,5 @@
-import BabyNamesView from "./BabyNamesView";
+import { BabyNamesView } from "./components/BabyNamesView";
+//import {PlaceView} from "./components/PlaceView"
 import "./style.css"
 
 function App(): JSX.Element {

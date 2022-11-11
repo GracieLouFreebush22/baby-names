@@ -1,5 +1,9 @@
 import react from "react";
-import {} from "./babyNamesData.json"
+import {OneName} from "../babyNamesData"
+
+interface NameViewProps{
+    onename: OneName;
+}
 
 export function NameView(): JSX.Element{
     return(
