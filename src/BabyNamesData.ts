@@ -4,7 +4,7 @@ export interface OneName {
   sex: string;
 }
 
-export const myNames: OneName[] = [
+export let myNames: OneName[] = [
   {
     id: 0,
     name: "Zahra",
@@ -861,3 +861,17 @@ export const myNames: OneName[] = [
     sex: "f",
   },
 ];
+
+myNames = myNames.sort((a,b) => {
+  const nameA = a.name.toUpperCase();
+  const nameB =b.name.toUpperCase();
+
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1
+  }
+  return 0
+})
+ console.log(myNames)
