@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function KeyboardControlledInput() {
+export function KeyboardControlledInput(): JSX.Element {
   const [searchMessage, setSearchMessage] = useState("");
 
   return (
