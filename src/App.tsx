@@ -8,12 +8,13 @@ function App(): JSX.Element {
     <div>
       <h1> Grace's Baby Names Website</h1>
       <AppHeader />
-      <KeyboardControlledInput/>
+      <KeyboardControlledInput />
       <div>
         <BabyNamesView />
-        
       </div>
     </div>
   );
 }
 export default App;
+
+//big push hoping this works
