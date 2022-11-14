@@ -12,4 +12,4 @@ export function NameView(props: NameViewProps): JSX.Element {
   );
 }
 
-//Name view takes data from babyData and passes props into it 
+//Name view takes data from babyData and passes props into it

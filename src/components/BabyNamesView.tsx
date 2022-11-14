@@ -3,10 +3,11 @@ import { myNames, OneName } from "../BabyNamesData";
 
 export function BabyNamesView(): JSX.Element {
   return (
-    <div className= "names-view">
-      <ul>{myNames.map((nameItem: OneName) => (
-        <NameView onename={nameItem} key={nameItem.id} />
-      ))}
+    <div className="names-view">
+      <ul>
+        {myNames.map((nameItem: OneName) => (
+          <NameView onename={nameItem} key={nameItem.id} />
+        ))}
       </ul>
     </div>
   );

@@ -1,23 +1,20 @@
 ul {
-    columns: 5;
-    background-color: beige;
+  columns: 5;
+  background-color: beige;
 }
 
-.search-bar{
-    margin: auto;
-    width: 50%;
-    border: 20px; 
-    
-    
+.search-bar {
+  margin: auto;
+  width: 50%;
+  border: 20px;
 }
-.search-button{
-    margin: auto;
-    border: 20px;
-    
+.search-button {
+  margin: auto;
+  border: 20px;
 }
 
-.name-view{
-    color: rgb(76, 0, 255);
+.name-view {
+  color: rgb(76, 0, 255);
 }
 /*
 .names-view{

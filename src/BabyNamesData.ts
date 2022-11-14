@@ -862,16 +862,16 @@ export let myNames: OneName[] = [
   },
 ];
 
-myNames = myNames.sort((a,b) => {
+myNames = myNames.sort((a, b) => {
   const nameA = a.name.toUpperCase();
-  const nameB =b.name.toUpperCase();
+  const nameB = b.name.toUpperCase();
 
   if (nameA < nameB) {
     return -1;
   }
   if (nameA > nameB) {
-    return 1
+    return 1;
   }
-  return 0
-})
- console.log(myNames)
+  return 0;
+});
+console.log(myNames);
