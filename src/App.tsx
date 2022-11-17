@@ -4,6 +4,7 @@ import { AppHeader } from "./components/AppHeader";
 import "./style.css";
 
 
+
 export function App(): JSX.Element {
   const [searchMessage, setSearchMessage] = useState("");
 
@@ -23,17 +24,17 @@ export function App(): JSX.Element {
 
       <button
         className="search-button"
-        onClick={() => console.log("KeyboardControlledInput for search is...")}
+        onClick={() => console.log("Search message is...")}
       >
 
       </button>
       <div>
-        <BabyNamesView />
+        <BabyNamesView searchmessage = {searchMessage}/>
       </div>
     </div>
   );
 }
 
-export default App;
+export default App
 
 

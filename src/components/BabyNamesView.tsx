@@ -1,14 +1,18 @@
 import { NameView } from "./NameView";
 import { OneName , mySortedNames} from "../BabyNamesData";
-import searchMessage from "../App";
+//import {searchMessage} from "../App";
 
 export interface NameViewProps {
   onename: OneName;
 }
 
-export function BabyNamesView(): JSX.Element {
+interface BabyNamesViewProps{
+  searchmessage: string
+}
 
-const matchingBabyNames = findMatchingBabyNames(searchMessage, mySortedNames)
+export function BabyNamesView({searchmessage}: BabyNamesViewProps): JSX.Element {
+
+const matchingBabyNames = findMatchingBabyNames(searchmessage, mySortedNames)
 
   return (
     <div className="names-view">
@@ -21,11 +25,15 @@ const matchingBabyNames = findMatchingBabyNames(searchMessage, mySortedNames)
   );
 }
 
-function findMatchingBabyNames(term: string, mySortedNames:OneName[]){
+function findMatchingBabyNames(searchMessage: string, mySortedNames:OneName[]){
   const resultNames: OneName[] = []
-    if (onename.name.includes(term)){
-      resultNames.push(mySortedNames)
+  //looking at prop of array instead of prop of a object
+  for(let item of mySortedNames) {
+    if (item.name.includes(searchMessage)){
+      resultNames.push(item)
+    }
   }
+  
   return resultNames
 }
 // (nameitem: onename) is the paramter list for the map function
