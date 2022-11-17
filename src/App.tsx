@@ -1,14 +1,32 @@
+import {useState} from "react"
 import { BabyNamesView } from "./components/BabyNamesView";
 import { AppHeader } from "./components/AppHeader";
 import "./style.css";
-import { KeyboardControlledInput } from "./components/KeyboardControlledInput";
+
 
 function App(): JSX.Element {
+
+  const [searchMessage, setSearchMessage] = useState("");
+  
   return (
     <div>
       <h1> Grace's Baby Names Website</h1>
       <AppHeader />
-      <KeyboardControlledInput />
+      <div className="search-bar">
+        <input
+          value={searchMessage}
+          onChange={(event) => {
+            setSearchMessage(event.target.value);
+          }}
+        />
+      </div>
+
+      <button
+        className="search-button"
+        onClick={() => console.log("KeyboardControlledInput for search is...")}
+      >
+
+      </button>
       <div>
         <BabyNamesView />
       </div>
@@ -17,6 +35,4 @@ function App(): JSX.Element {
 }
 export default App;
 
-//big push hoping this works
-//did yarn build will i work now
-//did not work 5th try
+

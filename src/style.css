@@ -1,3 +1,6 @@
+#root{
+  text-align: center;
+}
 ul {
   columns: 5;
   background-color: beige;
@@ -15,9 +18,23 @@ ul {
 
 .name-view {
   color: rgb(76, 0, 255);
+  border: 2px solid white
 }
-/*
+
+
+/* NOTES FROM LIVE CODING
+.name-view.name.f / or female {
+  background: magenta
+}
+
+.name-view.m .male{
+ background: light blue 
+}
 .names-view{
-    border-color: aquamarine;
+  border-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+// rem is usually better than px
 */
