@@ -4,11 +4,10 @@ export interface OneName {
 }
 
 export interface Sex {
-  sex: "f"| "m"
+  sex: "f" | "m";
 }
 
-
- let myNames = [
+const myNames = [
   {
     id: 0,
     name: "Zahra",

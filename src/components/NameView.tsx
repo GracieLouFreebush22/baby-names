@@ -1,11 +1,10 @@
 import { mySortedNames } from "../BabyNamesData";
-import {NameViewProps} from "./BabyNamesView"
-
+import { NameViewProps } from "./BabyNamesView";
 
 export function NameView(props: NameViewProps): JSX.Element {
   // could set const props.onename to one thing for ease
-  function getClassforSex(sex: string): string{
-    return sex === "m" ? "male" : "female"
+  function getClassforSex(sex: string): string {
+    return sex === "m" ? "male" : "female";
   }
   return (
     <div className="name-view">
