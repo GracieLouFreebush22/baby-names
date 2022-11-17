@@ -40,6 +40,7 @@ function findMatchingBabyNames(
 
   return resultNames;
 }
+
 // (nameitem: onename) is the paramter list for the map function
 //line 10 curlies are jsx expressions
 //name item is just a ref to a variable
