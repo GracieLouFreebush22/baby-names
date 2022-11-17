@@ -5,19 +5,20 @@ import "./style.css";
 
 
 function App(): JSX.Element {
-
   const [searchMessage, setSearchMessage] = useState("");
-  
+
+  function handleSearchTermChange(event: React.ChangeEvent <HTMLInputElement>): void{
+    setSearchMessage(event.target.value)
+    console.log(event.target.value)
+  }
+
   return (
     <div>
       <h1> Grace's Baby Names Website</h1>
       <AppHeader />
       <div className="search-bar">
-        <input
-          value={searchMessage}
-          onChange={(event) => {
-            setSearchMessage(event.target.value);
-          }}
+        <input value={searchMessage}
+          onChange= {handleSearchTermChange}
         />
       </div>
 
@@ -33,6 +34,7 @@ function App(): JSX.Element {
     </div>
   );
 }
+
 export default App;
 
 
