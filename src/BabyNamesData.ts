@@ -1,7 +1,7 @@
 export interface OneName {
   id: number;
   name: string;
-  sex: string;
+  sex: "m" | "f";
 }
 
 export let myNames: OneName[] = [
