@@ -1,16 +1,32 @@
 import { NameView } from "./NameView";
-import { myNames, OneName } from "../BabyNamesData";
+import { OneName , mySortedNames} from "../BabyNamesData";
+import searchMessage from "../App";
 
-export function BabyNamesView(): JSX.Element {
+export interface NameViewProps {
+  onename: OneName;
+}
+
+export function BabyNamesView(props: NameViewProps): JSX.Element {
+
+const matchingBabyNames = findMatchingBabyNames(searchMessage, mySortedNames)
+
   return (
     <div className="names-view">
       <ul>
-        {myNames.map((nameItem: OneName) => (
+        {matchingBabyNames.map((nameItem: OneName) => (
           <NameView onename={nameItem} key={nameItem.id} />
         ))}
       </ul>
     </div>
   );
+}
+
+function findMatchingBabyNames(term: string, mySortedNames:OneName[]){
+  const resultNames: OneName[] = []
+    if (onename.name.includes(term)){
+      resultNames.push(mySortedNames)
+  }
+  return resultNames
 }
 // (nameitem: onename) is the paramter list for the map function
 //line 10 curlies are jsx expressions

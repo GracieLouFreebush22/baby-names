@@ -4,14 +4,13 @@ import { AppHeader } from "./components/AppHeader";
 import "./style.css";
 
 
-function App(): JSX.Element {
+export function App(): JSX.Element {
   const [searchMessage, setSearchMessage] = useState("");
 
   function handleSearchTermChange(event: React.ChangeEvent <HTMLInputElement>): void{
     setSearchMessage(event.target.value)
     console.log(event.target.value)
   }
-
   return (
     <div>
       <h1> Grace's Baby Names Website</h1>

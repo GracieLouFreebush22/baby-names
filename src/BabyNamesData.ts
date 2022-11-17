@@ -1,10 +1,14 @@
 export interface OneName {
   id: number;
   name: string;
-  sex: "m" | "f";
 }
 
-export let myNames: OneName[] = [
+export interface Sex {
+  sex: "f"| "m"
+}
+
+
+ let myNames = [
   {
     id: 0,
     name: "Zahra",
@@ -862,7 +866,7 @@ export let myNames: OneName[] = [
   },
 ];
 
-myNames = myNames.sort((a, b) => {
+export const mySortedNames: OneName[] = myNames.sort((a, b) => {
   const nameA = a.name.toUpperCase();
   const nameB = b.name.toUpperCase();
 
