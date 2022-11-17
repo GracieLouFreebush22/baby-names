@@ -6,7 +6,7 @@ export interface NameViewProps {
   onename: OneName;
 }
 
-export function BabyNamesView(props: NameViewProps): JSX.Element {
+export function BabyNamesView(): JSX.Element {
 
 const matchingBabyNames = findMatchingBabyNames(searchMessage, mySortedNames)
 
