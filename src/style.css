@@ -1,9 +1,10 @@
 #root {
   text-align: center;
+  background-color: cornflowerblue;
 }
 ul {
   columns: 5;
-  background-color: beige;
+  background-color: rgb(10, 64, 241);
 }
 
 .search-bar {
@@ -16,9 +17,20 @@ ul {
   border: 20px;
 }
 
+.store-button {
+  margin-bottom: 20px;
+}
+.name-button {
+  border-color: aqua;
+  color: rgb(243, 204, 240);
+  background-color: rgb(71, 6, 252);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .name-view {
-  color: rgb(76, 0, 255);
-  border: 2px solid white;
+  color: rgb(33, 2, 105);
+  border: 1.2px solid rgb(54, 1, 243);
 }
 
 /* NOTES FROM LIVE CODING

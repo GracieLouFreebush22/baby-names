@@ -9,21 +9,20 @@ interface BabyNamesViewProps {
   searchmessage: string;
 }
 
-export function BabyNamesView({searchmessage,}: BabyNamesViewProps): JSX.Element {
+export function BabyNamesView({
+  searchmessage,
+}: BabyNamesViewProps): JSX.Element {
   const matchingBabyNames = findMatchingBabyNames(searchmessage, mySortedNames);
-  
 
   return (
     <div>
-
-    
-    <div className="names-view">
-      <ul>
-        {matchingBabyNames.map((nameItem: OneName) => (
-          <NameView onename={nameItem} key={nameItem.id} />
-        ))}
-      </ul>
-    </div>
+      <div className="names-view">
+        <ul>
+          {matchingBabyNames.map((nameItem: OneName) => (
+            <NameView onename={nameItem} key={nameItem.id} />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
