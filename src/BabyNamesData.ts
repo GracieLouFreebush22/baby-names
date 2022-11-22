@@ -3,9 +3,6 @@ export interface OneName {
   name: string;
 }
 
-export interface Sex {
-  sex: "f" | "m";
-}
 
 const myNames = [
   {
