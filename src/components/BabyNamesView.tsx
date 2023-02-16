@@ -1,5 +1,6 @@
 import { NameView } from "./NameView";
 import { OneName, mySortedNames } from "../BabyNamesData";
+import { useState } from "react";
 
 export interface NameViewProps {
   onename: OneName;
@@ -9,13 +10,18 @@ interface BabyNamesViewProps {
   searchmessage: string;
 }
 
-export function BabyNamesView({
-  searchmessage,
-}: BabyNamesViewProps): JSX.Element {
+export function BabyNamesView({ searchmessage,}: BabyNamesViewProps): JSX.Element {
   const matchingBabyNames = findMatchingBabyNames(searchmessage, mySortedNames);
-
+  
+  function setFavName(newname: OneName) {
+    throw new Error("Function not implemented.");
+  }
   return (
     <div>
+      <div>
+      <h3> Favorites: </h3>
+      <button className="store-button" > Store Name as Favorite </button>
+    </div>
       <div className="names-view">
         <ul>
           {matchingBabyNames.map((nameItem: OneName) => (
